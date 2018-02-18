@@ -167,7 +167,7 @@ section.work .section-title {
 }
 
 .work-grid .grid-item .inner:hover {
-    transform: scale(2);
+    transform: scale(1.3);
 }
 
 .work-grid .grid-item img {
@@ -345,6 +345,8 @@ footer #telandmail .right {
 
 /* The Modal (background) */
 #image-modal {
+    border: none;
+    outline: none;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 5000; /* Sit on top */
