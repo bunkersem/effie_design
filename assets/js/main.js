@@ -1,3 +1,5 @@
+---
+---
 
 $(window).on('load', function () {
     $('.grid').masonry({
@@ -43,4 +45,11 @@ var parsleyOptions = {
 // nav sticky
 $(document).ready(function(){
     $("#c-nav").sticky({topSpacing:0,zIndex:1000});
+});
+
+
+var $images = $($('#grid-variable-content').html()).find('img');
+
+$('.work-grid .grid-item .inner').each(function(i) {
+    $(this).css('background-image', 'url(' + $images.eq(i).attr('src') + ')');
 });

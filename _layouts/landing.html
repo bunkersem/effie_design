@@ -3,11 +3,20 @@ layout: home
 list_title: Nieuws
 ---
 
-<!-- 
-<section class="intro-banner" id="home-intro-banner">
+<style>
+    header.wrapped-section::before{content: "{{ page.header_side_text_left }}"}
+    header.wrapped-section::after{content: "{{ page.header_side_text_right }}"}
 
-</section>
- -->
+    section.work.wrapped-section::before{content: "{{ page.work_side_text_left }}"}
+    section.work.wrapped-section::after{content: "{{ page.work_side_text_right }}"}
+
+    section.about.wrapped-section::before{content: "{{ page.about_side_text_left }}"}
+    section.about.wrapped-section::after{content: "{{ page.about_side_text_right }}"}
+
+    section.contact.wrapped-section::before{content: "{{ page.contact_side_text_left }}"}
+    section.contact.wrapped-section::after{content: "{{ page.contact_side_text_right }}"}
+    
+</style>
 
 <section class="work wrapped-section" id="work">
     <div data-aos="fade-up" class="section-title">
@@ -16,22 +25,22 @@ list_title: Nieuws
 
     <div class="grid work-grid">
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-            <img src="http://via.placeholder.com/200x200" alt="">
+            <div class="inner"></div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-            <img src="http://via.placeholder.com/200x200" alt="">
+                <div class="inner"></div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-            <img src="http://via.placeholder.com/200x200" alt="">
+                <div class="inner"></div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-            <img src="http://via.placeholder.com/200x200" alt="">
+                <div class="inner"></div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-            <img src="http://via.placeholder.com/200x200" alt="">
+                <div class="inner"></div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-            <img src="http://via.placeholder.com/200x200" alt="">
+                <div class="inner"></div>
         </div>
     </div>
 </section>
@@ -42,8 +51,7 @@ list_title: Nieuws
     </div>
     <div class="section-content">
         <div data-aos="fade-up" class="jumbo">
-            <h1>Phasellus rhoncus rutrum nibh sed laoreet. Nulla euismod, lorem a porta aliquet, diam arcu aliquet eros, id interdum
-                odio enim id urna.</h1>
+            <h1>{{ page.about_title }}</h1>
         </div>
         <div data-aos="fade-up" class="read-more">
             <a class="cs-btn dark">Read More</a>
@@ -61,9 +69,7 @@ list_title: Nieuws
             <div data-aos="fade-right" class="jumbo">
                 <h1>Get in Touch</h1>
             </div>
-            <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, justo at feugiat laoreet, orci augue
-                commodo leo, vel egestas nisi dui vitae arcu. Integer lectus libero, condimentum sit amet tempus at, gravida
-                eu ante.</p>
+            <p data-aos="fade-right">{{ page.contact_content }}</p>
             <div data-aos="fade-right" class="container-fluid nopadding">
                 <div class="col col-xs-6 nopadding">
                     <a title="{{ site.phone }}" href="tel:{{ site.phone }}">
@@ -109,3 +115,9 @@ list_title: Nieuws
         </svg>
     </a>
 </div>
+
+<script id="grid-variable-content" type="text/html">
+    <div>
+    {% include variable-content.html file="_client_collection/home-work-images.markdown" %}
+    </div>
+</script>
