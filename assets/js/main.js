@@ -53,3 +53,26 @@ var $images = $($('#grid-variable-content').html()).find('img');
 $('.work-grid .grid-item .inner').each(function(i) {
     $(this).css('background-image', 'url(' + $images.eq(i).attr('src') + ')');
 });
+
+
+
+
+// my lightbox
+
+var $modal = $('#image-modal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var $img = $('.lightbox-image, .lightbox-container img');
+var $modalImg = $modal.find('#image-modal-image');
+var $captionText = $modal.find('#image-modal-caption');
+$img.on('click', function(){
+    $modal.css('display', "block");
+    $modalImg.get(0).src = $(this).attr('src') || $(this).css('background-image').match(/url\(["'](.+?)["']\)/)[1];
+    $captionText.html(this.alt);
+});
+
+var $close = $modal.find('.close');
+
+$close.on('click', function() { 
+    $modal.css('display', "none");
+});

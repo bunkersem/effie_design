@@ -25,22 +25,34 @@ list_title: Nieuws
 
     <div class="grid work-grid">
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-            <div class="inner"></div>
+            <div class="outer">
+            <div class="inner lightbox-image"></div>
+        </div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-                <div class="inner"></div>
+            <div class="outer">
+                <div class="inner lightbox-image"></div>
+            </div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-                <div class="inner"></div>
+            <div class="outer">
+                <div class="inner lightbox-image"></div>
+            </div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-                <div class="inner"></div>
+            <div class="outer">
+                <div class="inner lightbox-image"></div>
+            </div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-                <div class="inner"></div>
+            <div class="outer">
+                <div class="inner lightbox-image"></div>
+            </div>
         </div>
         <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
-                <div class="inner"></div>
+            <div class="outer">
+                <div class="inner lightbox-image"></div>
+            </div>
         </div>
     </div>
 </section>
@@ -121,3 +133,9 @@ list_title: Nieuws
     {% include variable-content.html file="_client_collection/home-work-images.markdown" %}
     </div>
 </script>
+
+<dialog role="document" id="image-modal" class="modal">
+    <a class="close"><span aria-hidden="true" aria-label="Close">&times;</span></a>
+    <img id="image-modal-image">
+    <div id="image-modal-caption"></div>
+</dialog>
