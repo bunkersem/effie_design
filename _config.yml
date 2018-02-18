@@ -1,0 +1,25 @@
+---
+title: Effie Design
+timezone: UTC
+collections:
+  client_collection:
+    title: Pagina's inhoud
+    output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+volledige-titel: Effie Design
+tags: Effie Design
+phone: 06-12345678
+email: effie@testmail.com
+description: Effie Desgin
+baseurl: 
+url: 
+facebook_username: Effie
+twitter_username: Effie
+markdown: kramdown
+theme: minima
+plugins:

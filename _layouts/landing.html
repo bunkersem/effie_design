@@ -1,0 +1,111 @@
+---
+layout: home
+list_title: Nieuws
+---
+
+<!-- 
+<section class="intro-banner" id="home-intro-banner">
+
+</section>
+ -->
+
+<section class="work wrapped-section" id="work">
+    <div data-aos="fade-up" class="section-title">
+        <h3>Work</h3>
+    </div>
+
+    <div class="grid work-grid">
+        <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
+            <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+        <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
+            <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+        <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
+            <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+        <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
+            <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+        <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
+            <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+        <div data-aos="fade-up" class="grid-item col col-xs-6 col-sm-4">
+            <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="about wrapped-section" id="about">
+    <div data-aos="fade-up" class="section-title">
+        <h3>About</h3>
+    </div>
+    <div class="section-content">
+        <div data-aos="fade-up" class="jumbo">
+            <h1>Phasellus rhoncus rutrum nibh sed laoreet. Nulla euismod, lorem a porta aliquet, diam arcu aliquet eros, id interdum
+                odio enim id urna.</h1>
+        </div>
+        <div data-aos="fade-up" class="read-more">
+            <a class="cs-btn dark">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact wrapped-section" id="contact">
+    <div data-aos="fade-up" class="section-title">
+        <h3>Contact</h3>
+    </div>
+    <div class="container-fluid nopadding">
+        <div class="col col-xs-6 contact-col contact-banner">
+            <div data-aos="fade-right" class="jumbo">
+                <h1>Get in Touch</h1>
+            </div>
+            <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, justo at feugiat laoreet, orci augue
+                commodo leo, vel egestas nisi dui vitae arcu. Integer lectus libero, condimentum sit amet tempus at, gravida
+                eu ante.</p>
+            <div data-aos="fade-right" class="container-fluid nopadding">
+                <div class="col col-xs-6 nopadding">
+                    <a title="{{ site.phone }}" href="tel:{{ site.phone }}">
+                        <i class="fa fa-phone" aria-hidden="true"></i> {{ site.phone }}</a>
+                </div>
+                <div class="col col-xs-6 nopadding">
+                    <a title="{{ site.email }}" href="tel:{{ site.email }}">
+                        <i class="fa fa-at" aria-hidden="true"></i> {{ site.email }}</a>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="contact-banner-social">
+                {% include social.html %}
+            </div>
+        </div>
+        <div class="col col-xs-6 contact-col contact-form">
+            <fieldset>
+                <legend data-aos="fade-left">
+                    <h4>
+                        <b>I'll get back to you shortly&hellip;</b>
+                    </h4>
+                </legend>
+                <form data-aos="fade-left" action="https://getsimpleform.com/messages?form_api_token=cfe536c569efa59f26c3e4966ea452fd" method="post">
+                    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+                    <input type="hidden" name="redirect_to" value="{{ " /thank-you.html " | absolute_url }}" />
+                    <!-- all your input fields here.... -->
+                    <input required spellcheck="false" placeholder="Your name" type="text" name="name" />
+                    <input required spellcheck="false" placeholder="Your email" type="email" name="email" />
+                    <textarea minlength="10" maxlength="1000" required rows="5" spellcheck="false" name="message" placeholder="Your message"></textarea>
+                    <button id="contact-submit-btn" class="cs-btn white cs-btn-sm" type="submit">Contact me</button>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</section>
+
+<div class="arrow-up">
+    <a href="#body-start">
+        <svg width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle r="97" cy="100" cx="100" stroke-width="5" stroke="#000" fill="none" />
+            <line y2="170" x2="100" y1="30" x1="100.217391" stroke-width="5" stroke="#000" />
+            <line y2="30" x2="100" y1="70" x1="59.782609" stroke-width="5" stroke="#000" />
+            <line stroke="#000" y2="28" x2="98.5" y1="70" x1="140" stroke-width="5" />
+        </svg>
+    </a>
+</div>
