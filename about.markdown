@@ -4,5 +4,3 @@ permalink: "/about/"
 layout: page
 ---
 
-
-
