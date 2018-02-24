@@ -2,7 +2,6 @@
 title: Home
 layout: landing
 list_title: Nieuws
-type: static
 header_side_text_left: Header Item 1
 header_side_text_right: Header Item 2
 work_side_text_left: Work Item 1

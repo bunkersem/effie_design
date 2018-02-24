@@ -13,6 +13,10 @@ a:hover {
     color: unset;
 }
 
+main {
+    min-height: 100vh;
+    min-height: calc(100vh - 300px);
+}
 
 legend {
     border-bottom: none;
