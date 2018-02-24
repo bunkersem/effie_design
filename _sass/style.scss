@@ -45,8 +45,23 @@ footer {
 }
 
 .custom-navbar {
-    background: #fff;
-    background: rgba(255,255,255,.9);
+    width: 272px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    transition: background-color 1s linear;
+
+    background-color: rgba(255,255,255,0);
+}
+
+.is-sticky .custom-navbar {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.custom-navbar-container {
+    min-width: 360px;
+    flex: 1;
 }
 
 .custom-navbar ul.nav {
@@ -148,14 +163,14 @@ section.work .section-title {
 }
 
 .work-grid .grid-item {
-    padding-top: 26%;
     position: relative;
+    padding: 10px;
 }
 
 .work-grid .grid-item .outer {
-    position: absolute;
+    padding-top: 78%;
+    position: relative;
     overflow: hidden;
-    top: 10px; left: 10px; right: 10px; bottom: 10px;
 }
 
 .work-grid .grid-item .inner {
@@ -420,3 +435,31 @@ footer #telandmail .right {
 
 
 
+
+
+// media queries
+
+@media (max-width: 768px) {
+    #about .section-content {
+        padding: 50px;
+    }
+
+    .contact-col {
+        padding: 40px;
+        padding-top: 120px;
+    }
+    .form-col {
+        padding: 40px;
+        padding-top: 120px;
+    }
+    .contact-banner-social {
+        margin: 0;
+        margin-top: 40px;
+    }
+    .contact-banner .contact-banner-social ul li {
+        margin-bottom: 10px;
+    }
+    .custom-navbar ul.nav {
+        padding: 0;
+    }
+}
