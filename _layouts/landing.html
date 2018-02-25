@@ -3,6 +3,10 @@ layout: home
 list_title: Nieuws
 ---
 
+<script id="grid-variable-content" type="text/html">
+    {% include variable-content-base-url.html file="_client_collection/home-work-images.markdown" %}
+</script>
+
 <style>
     header.wrapped-section::before{content: "{{ page.header_side_text_left }}"}
     header.wrapped-section::after{content: "{{ page.header_side_text_right }}"}
@@ -127,12 +131,6 @@ list_title: Nieuws
         </svg>
     </a>
 </div>
-
-<script id="grid-variable-content" type="text/html">
-    <div>
-    {% include variable-content.html file="_client_collection/home-work-images.markdown" %}
-    </div>
-</script>
 
 <dialog role="document" id="image-modal" class="modal">
     <a class="close"><span aria-hidden="true" aria-label="Close">&times;</span></a>
