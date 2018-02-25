@@ -1,12 +1,14 @@
+---
+---
 /* http://humanstxt.org/ */
 /* TEAM */
-    Developer: Sem Postma
-    From: Oosterhout, Noord Brabant, The Netherlands
-    Contact: sem.postma@gmail.com
+    {{ site.author.role }}: {{ site.author.name }}
+    From: {{ site.author.from }}
+    Contact: {{ site.author.email }}
     
-    Designer: Eva van der Weide
-    From: Oosterhout, Noord Brabant, The Netherlands
-    Contact: ezaa@live.nl
+    {{ site.designer.role }}: {{ site.designer.name }}
+    From: {{ site.designer.from }}
+    Contact: {{ site.designer.email }}
 
 
 /* SITE */
