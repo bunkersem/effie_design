@@ -23,3 +23,14 @@ twitter_username: Effie
 markdown: kramdown
 theme: minima
 plugins: 
+keywords: effie, design
+author:
+  name: Sem Postma
+  from: Oosterhout, Noord Brabant, The Netherlands
+  role: Developer
+  email: sem.postma@gmail.com
+designer:
+  name: Eva van der Weide
+  from: Oosterhout, Noord Brabant, The Netherlands
+  role: Developer
+  email: sem.postma@gmail.com
