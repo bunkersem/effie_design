@@ -3,6 +3,10 @@
     Developer: Sem Postma
     From: Oosterhout, Noord Brabant, The Netherlands
     Contact: sem.postma@gmail.com
+    
+    Designer: Eva van der Weide
+    From: Oosterhout, Noord Brabant, The Netherlands
+    Contact: ezaa@live.nl
 
 
 /* SITE */
