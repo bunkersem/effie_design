@@ -51,7 +51,7 @@ $(document).ready(function(){
 var $images = $($('#grid-variable-content').html()).find('img');
 
 $('.work-grid .grid-item .inner').each(function(i) {
-    $(this).css('background-image', 'url({{ site.baseurl }}' + $images.eq(i).attr('src') + ')');
+    $(this).css('background-image', 'url(' + $images.eq(i).attr('src') + ')');
 });
 
 
