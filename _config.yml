@@ -1,6 +1,6 @@
 ---
 title: Effie Design
-timezone: UTC
+timezone: Europe/Amsterdam
 collections:
   client_collection:
     title: Pagina's inhoud
@@ -23,7 +23,6 @@ twitter_username: Effie
 markdown: kramdown
 theme: minima
 plugins: 
-keywords: effie, design
 author:
   name: Sem Postma
   from: Oosterhout, Noord Brabant, The Netherlands
